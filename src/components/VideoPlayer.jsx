@@ -75,9 +75,11 @@ export default function VideoPlayer({ item, mediaType, season, episode }) {
     <div className="w-full aspect-video rounded-lg overflow-hidden bg-black">
       <iframe
         src={sources[1].url}
-        className="w-full h-full"
-        allow="autoplay; fullscreen; picture-in-picture"
+        width="100%"
+        height="100%"
+        frameBorder="0"
         allowFullScreen
+        allow="encrypted-media"
       />
     </div>
   )
